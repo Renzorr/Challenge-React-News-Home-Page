@@ -63,8 +63,8 @@
   .nav {
     background: v.$Off-white;
     position: fixed;
-    top: 0%;
-    right: 0%;
+    top: 0;
+    right: -100%;
     width: 0;
     height: 100%;
     padding: 20px 30px;
@@ -75,6 +75,7 @@
 
   .nav.active {
     width: 70vw;
+    right: 0;
     visibility: visible;
     opacity: 1;
   }
