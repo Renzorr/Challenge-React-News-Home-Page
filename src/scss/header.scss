@@ -1,0 +1,27 @@
+@use "./variables.scss" as v;
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 68px;
+}
+
+.header_items {
+  display: flex;
+  gap: 38.2px;
+}
+
+.header_item {
+  color: v.$Dark-grayish-blue;
+  transition: 0.3s ease;
+
+  &:hover {
+    color: v.$Soft-red;
+  }
+}
+
+.menu,
+.close {
+  display: none;
+}

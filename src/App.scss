@@ -1,0 +1,10 @@
+@use "./scss/reset.scss";
+@use "./scss/header.scss";
+@use "./scss/main.scss";
+@use "./scss/features.scss";
+@use "./scss/mediaquery";
+
+.container {
+  margin: 0 auto;
+  max-width: 1110px;
+}

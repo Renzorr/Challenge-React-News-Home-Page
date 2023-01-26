@@ -1,0 +1,47 @@
+@use "./variables.scss" as v;
+
+.features {
+  display: flex;
+  gap: 37px;
+  padding-top: 70px;
+}
+
+.feature_item {
+  display: flex;
+  max-width: 345px;
+  gap: 24px;
+}
+
+.feature_img {
+  max-width: 100px;
+}
+
+.feature_item_content {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.feature_number {
+  font-size: 30px;
+  font-weight: 800;
+  color: v.$Grayish-blue;
+}
+
+.feature_title {
+  font-size: 17.8px;
+  color: v.$Very-dark-blue;
+  font-weight: 800;
+  transition: 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    color: v.$Soft-red;
+  }
+}
+
+.feature_info {
+  font-size: 15px;
+  line-height: 25px;
+}
+

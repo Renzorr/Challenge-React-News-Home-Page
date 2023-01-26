@@ -1,0 +1,86 @@
+@use "./variables.scss" as v;
+
+@media (max-width: 1135px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .hero_section_content {
+    flex-direction: column;
+  }
+
+  .blog {
+    max-width: none;
+    padding: 30px;
+  }
+
+  .section_main_content {
+    width: 100%;
+    padding-top: 30px;
+  }
+
+  .hero_btn {
+    margin-top: 25px;
+  }
+
+  .features {
+    flex-direction: column;
+  }
+
+  .feature_item {
+    max-width: none;
+  }
+
+  .feature_item_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 700px) {
+  .header {
+    padding-top: 0px;
+  }
+
+  .hero_img {
+    display: none;
+  }
+  .hero_img_responsive {
+    display: inherit;
+  }
+
+  .menu,
+  .close {
+    display: inherit;
+  }
+
+  .close {
+    max-width: 46px;
+    align-self: flex-end;
+  }
+
+  .nav {
+    background: v.$Off-white;
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    width: 0;
+    height: 100%;
+    padding: 20px 30px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.7s;
+  }
+
+  .nav.active {
+    width: 70vw;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .header_items {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
