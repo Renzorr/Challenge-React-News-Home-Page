@@ -1,10 +1,15 @@
 import pc from "../assets/images/image-retro-pcs.jpg";
 import laptop from "../assets/images/image-top-laptops.jpg";
 import gaming from "../assets/images/image-gaming-growth.jpg";
+import { motion } from "framer-motion";
 
 function Features() {
   return (
-    <section className="container features">
+    <motion.section
+      className="container features"
+      animate={{ x: [50, 0], opacity: [0, 1] }}
+      transition={{ duration: 0.7 }}
+    >
       <div className="feature_item">
         <img src={pc} alt="" aria-hidden="true" className="feature_img" />
         <div className="feature_item_content">
@@ -37,7 +42,7 @@ function Features() {
           </p>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 

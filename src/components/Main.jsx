@@ -1,10 +1,15 @@
 import heroImg from "../assets/images/image-web-3-desktop.jpg";
 import heroImgResponsive from "../assets/images/image-web-3-mobile.jpg";
+import { motion } from "framer-motion";
 
 function Main() {
   return (
     <main className="container main">
-      <section className="hero">
+      <motion.section
+        className="hero"
+        animate={{ x: [-50, 0], opacity: [0, 1] }}
+        transition={{ duration: 0.7 }}
+      >
         <picture>
           <img
             loading="lazy"
@@ -32,9 +37,13 @@ function Main() {
             <button className="hero_btn">Read more</button>
           </div>
         </div>
-      </section>
+      </motion.section>
 
-      <section className="blog">
+      <motion.section
+        className="blog"
+        animate={{ y: [-50, 0], opacity: [0, 1] }}
+        transition={{ duration: 0.7 }}
+      >
         <h2 className="blog_title">New</h2>
 
         <div className="blogs_section">
@@ -59,7 +68,7 @@ function Main() {
             </p>
           </article>
         </div>
-      </section>
+      </motion.section>
     </main>
   );
 }

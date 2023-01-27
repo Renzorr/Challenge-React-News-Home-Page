@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: space-between;
   padding-top: 68px;
+
 }
 
 .header_items {
@@ -19,6 +20,9 @@
   &:hover {
     color: v.$Soft-red;
   }
+}
+.nav {
+  z-index: 999;
 }
 
 .menu,
