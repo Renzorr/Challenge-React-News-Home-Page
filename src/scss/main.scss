@@ -32,6 +32,7 @@
 .hero_info {
   font-size: 15px;
   line-height: 23px;
+  color: v.$Dark-grayish-blue;
 }
 
 .hero_btn {
@@ -91,6 +92,7 @@
     font-size: 15px;
     line-height: 23px;
     padding-top: 13px;
+    opacity: 0.7;
   }
 
   &:nth-last-child(1) {
